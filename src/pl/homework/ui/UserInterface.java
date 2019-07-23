@@ -7,7 +7,7 @@ import java.util.Locale;
 import java.util.Scanner;
 
 public class UserInterface {
-    AppConfig appConfig;
+    private AppConfig appConfig;
     Scanner scanner = new Scanner(System.in);
 
 
@@ -16,12 +16,12 @@ public class UserInterface {
     }
 
 
-    public int getNumber() {
+    private int getNumber() {
         System.out.println("Podaj liczbę ");
         return scanner.nextInt();
     }
 
-    public void endQiuz() {
+    private void endQiuz() {
         scanner.close();
     }
 
